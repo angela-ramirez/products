@@ -1,7 +1,10 @@
-E:\Andres\interface\src\main\java\com\madein\ecommerce\domain\Image.java
-E:\Andres\interface\src\main\java\com\madein\ecommerce\domain\ProductAttribute.java
-E:\Andres\interface\src\main\java\com\madein\ecommerce\domain\Products.java
-E:\Andres\interface\src\main\java\com\madein\rest\filter\CrossOriginResourceSharingFilter.java
-E:\Andres\interface\src\main\java\com\madein\services\ApplicationConfig.java
-E:\Andres\interface\src\main\java\com\madein\services\ProductResource.java
-E:\Andres\interface\src\main\java\com\madein\ecommerce\domain\Product.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\Products.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\ResponseService.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\Section.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\rest\filter\CrossOriginResourceSharingFilter.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\services\ApplicationConfig.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\ProductAttribute.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\Image.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\services\ProductResource.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\enums\StatusResponse.java
+C:\Users\USER\Documents\NetBeansProjects\Productos\interface\src\main\java\com\madein\ecommerce\domain\Product.java
