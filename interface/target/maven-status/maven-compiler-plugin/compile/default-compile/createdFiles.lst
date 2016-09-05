@@ -1,7 +1,10 @@
+com\madein\ecommerce\domain\ResponseService.class
 com\madein\ecommerce\domain\Products.class
+com\madein\ecommerce\enums\StatusResponse.class
 com\madein\services\ApplicationConfig.class
 com\madein\rest\filter\CrossOriginResourceSharingFilter.class
 com\madein\ecommerce\domain\ProductAttribute.class
+com\madein\ecommerce\domain\Section.class
 com\madein\services\ProductResource.class
 com\madein\ecommerce\domain\Image.class
 com\madein\ecommerce\domain\Product.class

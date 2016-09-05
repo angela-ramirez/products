@@ -1,6 +1,6 @@
 var $contextPath = "http://localhost:8080/interface/api/";
 
-var app = angular.module('myApp', ['ngMaterial', 'jkAngularCarousel']);
+var app = angular.module('myApp', ['ngMaterial']);
 
 app.service('CarouselService', ['$http', '$q', function ($http, $q) {
         return {

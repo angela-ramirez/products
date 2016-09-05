@@ -16,8 +16,10 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Section  implements  Serializable {
+    private Integer id;
     private String name;
     private List<Product> productList;
+    private int countProducts;
 
     public String getName() {
         return name;
@@ -33,6 +35,22 @@ public class Section  implements  Serializable {
 
     public void setProductList(List<Product> productList) {
         this.productList = productList;
+    }
+
+    public int getCountProducts() {
+        return countProducts;
+    }
+
+    public void setCountProducts(int countProducts) {
+        this.countProducts = countProducts;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     @Override
