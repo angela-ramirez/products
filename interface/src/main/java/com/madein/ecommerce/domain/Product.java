@@ -17,6 +17,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Product  implements  Serializable {
     
+    protected Integer productId;
     protected List<ProductAttribute> productAttributes;
     protected List<Image> images;
     
@@ -53,4 +54,15 @@ public class Product  implements  Serializable {
     public void setImages(List<Image> images) {
         this.images = images;
     }
+
+    public Integer getProductId() {
+        return productId;
+    }
+    
+    
+    public void setProductId(Integer productId) {
+        this.productId = productId;
+    }
+    
+    
 }
