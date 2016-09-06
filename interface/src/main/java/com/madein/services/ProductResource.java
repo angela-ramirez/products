@@ -176,8 +176,12 @@ public class ProductResource {
 
         List<Product> productAll = addProduct();
 
-        for (int i = first; i < max; i++) {
-            products.add(productAll.get(i));
+        if (first > 0 && max > 0) {
+            for (int i = first; i < max; i++) {
+                products.add(productAll.get(i));
+            }
+        } else {
+            products = addProduct();
         }
 
         Section section = new Section();
