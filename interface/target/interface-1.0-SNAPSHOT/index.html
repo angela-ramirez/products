@@ -1,61 +1,32 @@
-<!doctype html>
-<html ng-app="myApp">
+<!DOCTYPE html>
+
+<html>
+
     <head>
-        <meta charset="utf-8">
-        <title>Carousel Skeleton - jCarousel Examples</title>
-        <!-- Example assets -->
-        <link rel="stylesheet" type="text/css" href="jcarousel.skeleton.css">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-        <script data-require="angular.js@*" data-semver="1.5.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
-        <script src="https://code.angularjs.org/1.5.0/angular-animate.min.js"></script>
-        <script src="https://code.angularjs.org/1.5.0/angular-aria.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css" />
-        <script src="js/paging.js"></script>
-        <script src="carouselService.js"></script>
-        <script src="script.js"></script>
-
-        <!--<script type="text/javascript" src="jcarousel.skeleton.js"></script>-->
+        <!-- SCROLLS -->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
+        <link rel="stylesheet" href="css/angular-material.min.css" />
+        <link rel="stylesheet" href="css/app.css" >
     </head>
-    <body ng-controller="MyCtrl" >
-        <div id="divMain">
-            <div ng-repeat="section in sections"> 
-                <md-content layout-padding>
-                    <div style="text-align: right" onclick="verMas(section.id)"><a>Ver M&aacute;s</a></div>
-                    <md-card layout="column" layout-align="center center"  style="padding-bottom: 10px">
-                        <h3>{{section.name}}</h3>
-                        <div class="wrapper">
-                            <div class="jcarousel-wrapper">
-                                <input type="hidden" id="index{{section.id}}" value="0"/>
-                                <!-- Carousel -->
-                                <div id="section{{section.id}}" class="jcarousel">
-                                    <ul ng-repeat="product in section.productList">
-                                        <li>
-                                            <img  
-                                                ng-src="data:image/png;base64,{{product.images[0].content}}" 
-                                                style="width:600px !important;height:400px !important" alt="">{{product.images[0].name}}
-                                        </li>
-                                    </ul>
-                                </div> 
-                                <br/>
-                                <!-- Pagination -->
 
-                                <cl-paging id="paging{{section.id}}"
-                                           flex cl-pages="paging[section.id].total" cl-steps="6" 
-                                           cl-page-changed="page(section)"
-                                           cl-current-page="paging[section.id].current"></cl-paging>
-
-                            </div>
-                        </div>
-                    </md-card>
-                </md-content>  
-
-
-            </div>
-        </div>
-
-
-
-    </body>
+<body ng-controller="mainController" id="mainApp">
+    <md-toolbar class="md-menu-toolbar">
+        <h2 class="md-toolbar-tools">Productos</h2>
+        <md-menu-bar>
+            <md-menu>
+                <button ng-click="$mdOpenMenu()"> <i class="fa fa-home"></i>Producto</button>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button href="#product">Abrir Producto</md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </md-menu-bar>
+    </md-toolbar>
+    <div ng-view ng-show="appReady"></div> 
+    
+    <script type="text/javascript" data-main="js/run-custom-training"
+            src="js/lib/require.js">
+    </script>
+</body>
 </html>

@@ -1,0 +1,101 @@
+<div>
+
+    <style>
+        .colour {
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            border: 1px solid rgba(0, 0, 0, .2);
+        }
+
+        .blue {
+            background: #13b4ff;
+        }
+
+        .purple {
+            background: #ab3fdd;
+        }
+
+        .wine {
+            background: #ae163e;
+        }
+    </style>
+    <md-content layout-padding>
+        <span class="md-headline">Producto</span>
+        <form  name="formProduct" novalidate>
+            <input type="hidden" ng-model="product.productId" />
+            <div layout="row">
+                <div flex="34">
+
+                    <img data-ng-src="{{firstImage}}" style="margin-right: 5%;height: 400px; width: 350px;"/>
+
+                </div>
+                <table>
+                    <tr>
+                        <td><div class="colour blue" ></div></td>
+                        <td><div class="colour purple"></div></td>
+                        <td><div class="colour wine"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Azul</td>
+                        <td>Morado</div></td>
+                        <td>Vino</div></td>
+                    </tr>
+                    <tr >
+                        <td>
+                            <div ng-repeat="d in product.productAttributes"  style="display: inline">
+                                <div ng-show="d.name == 'Precio'">
+                                    <label>{{d.name}}</label>
+                                    <md-subheader>${{d.value}}</md-subheader>
+                                </div>
+                            </div>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><md-button class="md-raised md-primary">
+                        <img data-ng-src="{{fav}}" style="margin-top:15%;height:20px; width: 20px;"/>
+                        {{ 'FAVORITO_TEXT' | translate }}
+                    </md-button>
+                    </td>
+                    <td>
+                    <md-button class="md-raised md-primary">
+                        <img data-ng-src="{{share}}" style="margin-top:15%;height:20px; width: 20px;"/>
+                        {{ 'COMPARTIR_TEXT' | translate }}
+                    </md-button>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div flex="33">
+                                <md-input-container class="md-block" >
+                                    <label>{{ 'COMENTARIOS_TEXT' | translate }}: </label>
+                                    <textarea md-maxlength="500" ng-model="comments" md-select-on-focus></textarea>
+                                </md-input-container>
+                            </div></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div layout="row">        
+                <div ng-repeat="d in product.images">
+                    <md-button ng-click="setFirstImage(d.content)">
+
+                        <img data-ng-src="{{d.content}}" style="margin-right: 5%;height: 150px; width: 125px;"/>
+                    </md-button>
+                </div>
+            </div>
+            <br>
+            <div layout="row"> 
+                <div flex="33">
+                    <div ng-repeat="d in product.productAttributes"  style="display: inline">
+                        <div ng-hide="d.name == 'Precio' || d.name == 'Id'">
+                            <label>{{d.name}}</label>
+                            <md-subheader>{{d.value}}</md-subheader>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </md-content>
+</div>

@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    /*width: 100%;*/
+    padding: 20px;
+}
+
+md-card {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 10px;
+}
