@@ -166,7 +166,7 @@ public class ProductResource {
         p3.getProductAttributes().add(new ProductAttribute("Id", "82707ad7-6897-11e6-af9c-002219e6669f", "java.lang.String"));
         p3.getProductAttributes().add(new ProductAttribute("Precio", "90000", "java.lang.Integer"));
 
-        File px3 = new File("E:\\Andres\\Bebe\\2016\\IMG_20150425_162256845.jpg");
+        File px3 = new File("C:\\Users\\USER\\Downloads\\IMG_20150425_162256845.jpg");
 
         p3.getImages().add(new Image(Files.toByteArray(px3), "photo3", "jpg", "6,9 kB"));
 
@@ -180,7 +180,7 @@ public class ProductResource {
         p4.getProductAttributes().add(new ProductAttribute("Id", "82707ad7-6897-11e6-af9c-002219e6669f", "java.lang.String"));
         p4.getProductAttributes().add(new ProductAttribute("Precio", "90000", "java.lang.Integer"));
 
-        File px4 = new File("E:\\Andres\\Bebe\\2016\\IMG_20150413_225442574.jpg");
+        File px4 = new File("C:\\Users\\USER\\Downloads\\IMG_20150413_225442574.jpg");
 
         p4.getImages().add(new Image(Files.toByteArray(px4), "photo4", "jpg", "6,9 kB"));
 
@@ -194,7 +194,7 @@ public class ProductResource {
         p5.getProductAttributes().add(new ProductAttribute("Id", "82707ad7-6897-11e6-af9c-002219e6669f", "java.lang.String"));
         p5.getProductAttributes().add(new ProductAttribute("Precio", "90000", "java.lang.Integer"));
 
-        File px5 = new File("E:\\Andres\\Bebe\\2016\\IMG_20150413_225442574.jpg");
+        File px5 = new File("C:\\Users\\USER\\Downloads\\IMG_20150413_225442574.jpg");
 
         p5.getImages().add(new Image(Files.toByteArray(px5), "photo5", "jpg", "6,9 kB"));
 
@@ -208,7 +208,7 @@ public class ProductResource {
         p6.getProductAttributes().add(new ProductAttribute("Id", "82707ad7-6897-11e6-af9c-002219e6669f", "java.lang.String"));
         p6.getProductAttributes().add(new ProductAttribute("Precio", "90000", "java.lang.Integer"));
 
-        File px6 = new File("E:\\Andres\\Bebe\\2016\\IMG_20150413_225442574.jpg");
+        File px6 = new File("C:\\Users\\USER\\Downloads\\IMG_20150413_225442574.jpg");
 
         p6.getImages().add(new Image(Files.toByteArray(px6), "photo6", "jpg", "6,9 kB"));
 

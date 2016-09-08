@@ -97,8 +97,6 @@ mainApp.controller('ProductController', ['$http', '$scope', '$mdDialog', 'Produc
             $mdDialog.show({
                 controller: ProductDetailController,
                 scope: $scope.$new(),
-                with : 500,
-                height: 700,
                 templateUrl: 'views/product/item-description.html',
                 parent: angular.element(document.body),
                 clickOutsideToClose: true,
@@ -163,6 +161,7 @@ mainApp.controller('ProductController', ['$http', '$scope', '$mdDialog', 'Produc
         };
 
         $scope.setFirstImage = function (content) {
+            $scope.firstImage = content;
         };
 
         $scope.getSections();
